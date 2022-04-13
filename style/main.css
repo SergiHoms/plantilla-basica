@@ -1,0 +1,350 @@
+/*====================
+=======Structure======
+======================*/
+
+header{
+   
+}
+
+main{
+    margin: 0 auto;
+    width: 90%;
+}
+
+/*====================
+========Columns=======
+======================*/
+
+.desktop-one-column{
+    width: 100%;
+}
+
+.desktop-one-column .column{
+    width: 100%;
+}
+
+.desktop-two-columns{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.desktop-two-columns .column{
+    width: 48%;
+}
+
+.desktop-two-columns-aside{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.desktop-two-columns-aside .column-aside{
+    width: 30%;
+}
+
+.desktop-two-columns-aside .column-main{
+    width: 65%;
+}
+
+.desktop-two-columns-inline{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.desktop-two-columns-inline .column{
+    width: 48%;
+}
+
+.desktop-two-columns-inline .column div{
+    display: flex;
+    margin-right: 1em;
+}
+
+.desktop-three-columns{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.desktop-three-columns .column{
+    width: 30%;
+}
+
+.desktop-four-columns{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.desktop-four-columns .column{
+    width: 22%;
+}
+
+/*====================
+======Typography======
+======================*/
+
+h1, h2, h3, h4, h5, h6, a, p{
+    color: hsl(0, 0%, 0%);
+}
+
+h1, h2, h3, h4 {
+    font-family: "Roboto";
+}
+
+h5, h6 {
+    font-family: "Roboto Condensed";
+}
+
+a, td, p, button, span, li{
+    font-family: "Roboto";
+    text-decoration: none;
+}
+
+
+/*====================
+========Image=========
+======================*/
+
+img {
+    max-width: 100%;
+}
+
+/*====================
+=======Header=========
+======================*/
+
+.header-top{
+    background-color: hsl(0, 4%, 91%);
+    padding: 1% 5%;
+    width: 90%;
+}
+
+.header-top-featured-news{
+    width: 85%;
+}
+
+.header-top-featured-news ul{
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-top-featured-news ul li{
+    font-size: 0.8rem; 
+}
+
+.header-top-featured-news ul li:first-child{
+    color:hsl(0, 100%, 40%);
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.header-top-featured-news ul li:not(:first-child):not(:last-child)::after {
+    padding-left: 0.25rem;
+    content: "-";
+}
+
+.header-top-editions {
+    margin-left: auto;
+    width: 55%;
+}
+
+.header-top-editions ul{
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-top-editions ul li{
+    font-size: 0.8rem;
+}
+
+.header-top-editions ul li:not(:last-child)::after {
+    content: "|";
+    padding-left: 0.5rem;
+    color: #aaa;
+    font-weight: 600;
+}
+
+.header-main{
+    background-color: hsl(5, 81%, 45%);
+    padding: 2% 5%;
+    width: 90%;
+    
+}
+
+.header-main-menu-button svg{
+    width: 3rem;
+}
+
+.header-main-menu-button svg path{
+    fill: hsl(0, 0%, 100%)
+}
+
+.header-main-logo svg{
+    width: 20rem;
+}
+
+.header-main-logo svg path{
+    fill: hsl(0, 0%, 100%);
+}
+
+.header-main-users{
+    display: flex;
+    justify-content: space-between;
+    margin-left: auto;
+    width: 75%;
+}
+
+.header-main-users-login button {
+    border: none;
+    border-radius: 0.4rem;
+    display: flex;
+    padding: 0.2rem 0.5rem;
+}
+
+.header-main-users-login button svg{
+    width: 1.5rem;
+    margin-left: .5rem;
+}
+
+.header-main-users-login button span{
+    margin-top: 0.2rem;
+}
+
+.header-main-users-register button{
+    border: none;
+    border-radius: 0.4rem;
+    padding: 0.4rem 0.8rem;
+    background-color: #ffc700;
+    font-family: "Times New Roman",Times,serif;
+    font-style: italic;
+    font-weight: 600;
+}
+
+.header-menu{
+    background-color: hsl(0, 4%, 91%);
+    border-bottom: solid 2px hsl(0, 0%, 80%);
+    padding: 0.5rem 5%;
+    width: 90%;
+    margin-top:.3rem;
+}
+
+.header-menu ul{
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.header-menu ul li{
+    font-weight: 600;
+}
+
+.header-menu ul li:first-child svg{
+    width: 1.4rem;
+}
+
+.header-menu ul li:last-child svg{
+    width: 1.1rem;
+}
+
+/*====================
+=======Banner=========
+======================*/
+
+.banner{
+    margin: 1rem auto;
+    width: max-content;
+}
+
+.banner.sticky{
+    
+}
+
+/*====================
+=======News===========
+======================*/
+
+.news{margin-bottom: 1rem;
+}
+
+.news-image{
+}
+
+.news-category{margin-bottom: 0.1rem;
+}
+
+.news-category span{
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: .85rem;
+    line-height: 1.1rem;
+}
+
+.news-categorycolor{
+    color: #cd0000; 
+}
+
+.news-title{
+    padding-top:0.5rem
+}
+
+.news-title h4{
+    font-size: 1.40rem;
+    font-weight: 900;
+    line-height: 1.05em;
+    font-family: Roboto,"Helvetica Neue",Arial;
+}
+
+.news-title p{
+    font-family: Georgia,Times,"Times New Roman",serif;
+    margin-top: 0;
+    margin-bottom: 0.5rem!important;
+    padding-top:0.5rem
+}
+
+.news-title h2{
+    font-size: 2.05rem;
+    font-weight: 900;
+    font-family: Roboto,"Helvetica Neue",Arial;
+    padding-bottom: 1rem; 
+}
+.news-title h3{
+    font-family: Georgia,Times,"Times New Roman",serif;
+    margin-bottom: 0.5rem!important;
+    font-family: Roboto,"Helvetica Neue",Arial;
+    font-size: 1.17em;
+    font-weight: 600;
+}
+
+.news-author{
+    color:hsl(0, 0%, 50%);
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+}
+
+.news-opinion h4{
+    font-weight: 600;
+    font-size: 1.05rem  
+}
+
+/*====================
+=======Columns===========
+======================*/
+
+.column{
+
+}
+
+.column-main{
+
+}
+
+.column-aside{
+
+}
+
+
+
